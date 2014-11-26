@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* header
+-------------------------------------------------------------------------------- */
+.header,
+.main-content,
+.footer{width: 990px; margin: 0 auto;}
+.header{ padding-top: 3.4em; position: relative;}
+.logo{ width: 16.5%; float: left;}
+.logo img{width: 100%;}
+.nav-ul{ float: right; font-size: 0; width: 80%;text-align: right; position: absolute; bottom: 0; right: 0;}
+.nav-ul li{ display: inline; margin-left: 3.7%; font-size: 16px;}
+.nav-ul li a{ color: #999999;font-size:0.8125em; }
+.nav-ul .active a,
+.nav-ul li a:hover{ color: #389dca;}
+
+/* main-content
+-------------------------------------------------------------------------------- */
+
+.left-column,
+.center-column,
+.right-column{ float: left; width: 310px;}
+
+.center-column,
+.right-column{margin-left: 30px;}
+
+.left-column p img,
+.center-column p img,
+.right-column p img{ width: 100%;}
+
+.left-column p,
+.center-column p,
+.right-column p{ margin-bottom: 0.5em;}
+
+.header,
+.left-column h3,
+.center-column h3,
+.right-column h3{ margin-bottom: 3.875em;}
+
+.left-column h3 a,
+.center-column h3 a,
+.right-column h3 a{ font-size: 0.8125em; color: #999999;line-height: 0.8125em;}
+
+.left-column h3 a:hover,
+.center-column h3 a:hover,
+.right-column h3 a:hover{color: #389dca;}
+
+.film,
+.film video{ width: 720px; height: auto; margin: 0 auto;}
+.film video{ background: #e2e2e2;}
+.film{ margin-bottom:1.25em;}
+.film h3{ font-size: 0.8125em; color: #999999;line-height:1.625em;}
+
+	
+	.contact-content{ padding-top: 2.625em;}
+	.contact-content h2,
+	.contact-content p{ font-size: 0.8125em; font-family: Arial; line-height: 1.875em; margin: 0;}
+	.contact-content h2{ border-bottom: 1px solid #999999;}
+	.contact-content .line{ width: 1.875em; height: 1px; line-height: 0; margin-bottom: 0.625em; _font-size: 1px; _width: 30em; _margin-bottom: 10em; background: #999999;}
+	.contact-content p{ color: #999999;word-wrap: break-word;}
+	.contact-content-fa p{ position: relative; margin-left: 1.8em;}
+	.contact-content-fa p .fa{ font-size: 1.384em; line-height: 1.384em; vertical-align: middle; text-indent: 0; position: absolute; left:-1.277em; top: 0;}
+
+	/* info
+	-------------------------------------------------------------------------------- */
+	.info-left-bar{ width: 34.3%; float: left;}
+	.info-left-bar img{width: 100%;}
+	.info-right-bar{ width: 63.4%; float: right;font-size: 0.8125em; color: #999999; padding-top: 1.846em; }
+	.info-right-bar h2{font-family: 'Microsoft YaHei'; margin-bottom: 1.538em;}
+	.info-right-bar h2 em{ color: #cfe7f2; font-style: normal; font-family: Arial; padding-left:0.384em; }
+	.info-right-bar p{ margin-bottom: 2.92em;line-height: 1.846em;}
+
+@media screen and (max-width : 990px) {
+	.header,
+	.main-content,
+	.footer{width: 98%;}
+	/* main-content
+	-------------------------------------------------------------------------------- */
+	.left-column,
+	.center-column,
+	.right-column{width: 31.3%;}
+
+	.center-column,
+	.right-column{margin-left: 3%;}
+
+	.left-column p,
+	.center-column p,
+	.right-column p{ margin-bottom: 0.2em;}
+
+	.header,
+	.left-column h3,
+	.center-column h3,
+	.right-column h3{ margin-bottom: 2em;}
+	.film,
+	.film video{ width: 80%; height: auto;}
+	.film video{ width: 100%;}
+	
+	.film video,
+	.film video source{ height: auto;}
+}
+
+
+
+
+
+@media screen and (max-width : 480px) {
+	body,
+	.nav-ul li{font-size: 8px;}
+	.header{ padding-top: 2em;}
+	.logo{ width: 17%;}
+	.main-content{ margin-top: 0.5em;}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	body,
+	.nav-ul li{font-size: 8px;}
+}
+

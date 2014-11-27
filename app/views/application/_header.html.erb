@@ -4,10 +4,9 @@
       <a href="index.shtml"><%= image_tag "logo.jpg" %></a>
     </div>
     <ul class="nav-ul">
-      <li class="active"><a href="index.shtml">大会视频</a></li>
-      <li><a href="#">大会图片</a></li>
-      <li><a href="#">视频预告</a></li>
-      <li><a href="#">信息</a></li>
+      <li class="active"><a href="/">大会视频</a></li>
+      <li><%= link_to "大会图片", photos_path %></li>
+      <li <% if current_page?(controller: 'biographies', action: 'show') %>class="active"<% end %>><%= link_to "关于她", biography_path %></li>
       <li><a href="contact.shtml">联系我们</a></li>
     </ul>
   </div>

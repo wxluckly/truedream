@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  root 'video#index'
+
+  resource :biography
+  resources :photos
+  resources :videos
+
 end

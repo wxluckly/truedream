@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'video#index'
+  root 'videos#index'
 
   resource :biography
   resources :photos

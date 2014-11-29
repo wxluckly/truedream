@@ -1,0 +1,31 @@
+<%= link_to '添加', new_admin_photo_path(category: params[:category]), class: 'pull-right btn btn-warning' %>
+<% if @photos.present? %>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>商品标识码</th>
+      <th>价格</th>
+      <th>库存</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @photos.each do |photo| %>
+    <tr>
+      <td><%= photo.sku %></td>
+      <td><%= photo.price %></td>
+      <td><%= photo.stock %></td>
+      <td>
+        <%= link_to '编辑', edit_admin_photo_path(photo, category: params[:category]) %>
+        <%= link_to '删除', admin_photo_path(photo, category: params[:category]), method: :delete, data: { confirm: '确定删除吗?' } %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate @photos %>
+<% else %>
+<div>
+ 暂无内容
+</div>
+<% end %>

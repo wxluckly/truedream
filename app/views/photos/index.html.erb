@@ -3,5 +3,27 @@
   <%= render "header" %>
   
   <!-- main-content -->
-
+  <div class="main-content clearfix">
+    <div class="left-column">
+      <% @photos.each_with_index do |photo, index| %>
+      <% next if index % 3 != 0 %>
+      <p><%= link_to image_tag(photo.cover_url(:on_use)), photo %></p>
+      <h3><%= link_to photo.title, photo %></h3>
+      <% end %>
+    </div>
+    <div class="center-column">
+      <% @photos.each_with_index do |photo, index| %>
+      <% next if index % 3 != 1 %>
+      <p><%= link_to image_tag(photo.cover_url(:on_use)), photo %></p>
+      <h3><%= link_to photo.title, photo %></h3>
+      <% end %>
+    </div>
+    <div class="right-column">
+      <% @photos.each_with_index do |photo, index| %>
+      <% next if index % 3 != 2 %>
+      <p><%= link_to image_tag(photo.cover_url(:on_use)), photo %></p>
+      <h3><%= link_to photo.title, photo %></h3>
+      <% end %>
+    </div>
+  </div>
 </div>

@@ -4,8 +4,6 @@
 <% end %>
 <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
 <%= f.input :title, label: '标题' %>
-<%= f.input :content, label: '内容' %>
-<%= f.input :cover, label: '封面' %>
 <%= f.input :photo, label: '正文大图' %>
 <%= f.input :sort, label: '位置权重' %>
 

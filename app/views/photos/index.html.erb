@@ -1,28 +1,21 @@
 <div class="wrap">
-  <!-- header -->
-  <%= render "header" %>
-  <!-- <link rel="stylesheet" href="css/lightbox.css"> 新添加css -->
-
-  <!-- main-content -->
-  <div class="main-content clearfix">
+	<!-- header -->
+	<%= render "header" %>
+	<%= stylesheet_link_tag 'lightbox', media: 'all' %>
+	<!-- main-content -->
+	<div class="main-content clearfix">
 		<div class="image-set">
 			<!-- href里是大图的路径，尺寸要求：任何比例尺寸； src是小图路径，尺寸要求：250*360px  -->
-			<a class="example-image-link" href="<%= image_url "Athletic_385.jpg" %>" data-lightbox="example-set" data-title="描述文字">
-				<%= image_tag "Athletic_385.jpg", alt:"1a" %>
+			<% @photos.each do |photo| %>
+			<a class="example-image-link" href="<%= image_url photo.photo_url %>" data-lightbox="example-set" data-title="<%= photo.title %>">
+				<%= image_tag photo.photo_url(:on_use) %>
 			</a>
-			<a class="example-image-link" href="<%= image_url "1a.jpg" %>" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-				<%= image_tag "1a.jpg", alt:"2a" %>
-			</a>
-			<a class="example-image-link" href="<%= image_url "2a.jpg" %>" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-				<%= image_tag "3a.jpg", alt:"2a" %>
-			</a>
-			<a class="example-image-link" href="<%= image_url "3a.jpg" %>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-				<%= image_tag "2a.jpg", alt:"3a" %>
-			</a>
+			<% end %>
 		</div>
 	</div>
 </div>
-<script src="js/lightbox.js"></script>
+<% content_for :js do %>
+<%= javascript_include_tag 'lightbox' %>
 <script type="text/javascript">
 	$(function(){
 		$(".image-set > a:nth-child(3n)").css({"margin-right":0});
@@ -30,4 +23,4 @@
 		$(".image-set > a").css({"height":aW*1.44});
 	})
 </script>
-
+<% end %>

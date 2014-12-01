@@ -10,7 +10,7 @@ class PhotoCoverUploader < CarrierWave::Uploader::Base
 
 
   version :on_use do
-    process resize_to_fill: [310, 160]
+    process resize_to_fill: [250, 360]
   end
 
   version :thumb do

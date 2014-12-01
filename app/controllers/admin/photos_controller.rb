@@ -49,7 +49,7 @@ class Admin::PhotosController < Admin::BaseController
 
   private
   def photo_params
-    params.require(:photo).permit(:title, :content, :cover, :photo)
+    params.require(:photo).permit(:title, :content, :cover, :photo, :sort)
   end
 
 end

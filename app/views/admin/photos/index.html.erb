@@ -5,16 +5,14 @@
     <tr>
       <th>缩略图</th>
       <th>标题</th>
-      <th>内容</th>
       <th>操作</th>
     </tr>
   </thead>
   <tbody>
     <% @photos.each do |photo| %>
     <tr>
-      <td><%= image_tag(photo.cover_url(:thumb)) %></td>
+      <td><%= image_tag(photo.photo_url(:thumb)) %></td>
       <td><%= photo.title %></td>
-      <td><%= photo.content %></td>
       <td>
         <%= link_to '编辑', edit_admin_photo_path(photo, category: params[:category]) %>
         <%= link_to '删除', admin_photo_path(photo, category: params[:category]), method: :delete, data: { confirm: '确定删除吗?' } %>

@@ -5,70 +5,25 @@
   <!-- main-content -->
   <div class="main-content clearfix">
     <div class="left-column">
-      <p>
-        <a href="video.shtml">
-          <%= image_tag "video_03.jpg" %>
-        </a>
-      </p>
-      <h3><a href="video.shtml">程十庆</a></h3>
-
-      <p>
-        <a href="#">
-          <%= image_tag "video_12.jpg" %>
-        </a>
-      </p>
-      <h3><a href="#">PRTA</a></h3>
-
-      <p>
-        <a href="#">
-          <%= image_tag "video_18.jpg" %>
-        </a>
-      </p>
-      <h3><a href="#">无标题</a></h3>
+      <% @videos.each_with_index do |video, index| %>
+      <% next if index % 3 != 0 %>
+      <p><%= link_to image_tag(video.cover_url(:on_use)), video %></p>
+      <h3><%= link_to video.title, video %></h3>
+      <% end %>
     </div>
     <div class="center-column">
-      <p>
-        <a href="#">
-          <%= image_tag "video_05.jpg" %>
-        </a>
-      </p>
-      <h3><a href="#">加措活佛</a></h3>
-
-      <p>
-        <a href="#">
-          <%= image_tag "video_13.jpg" %>
-        </a>
-      </p>
-      <h3><a href="#">徐嘉</a></h3>
-
-      <p>
-        <a href="#">
-          <%= image_tag "video_19.jpg" %>
-        </a>
-      </p>
-      <h3><a href="#">无标题</a></h3>
+      <% @videos.each_with_index do |video, index| %>
+      <% next if index % 3 != 1 %>
+      <p><%= link_to image_tag(video.cover_url(:on_use)), video %></p>
+      <h3><%= link_to video.title, video %></h3>
+      <% end %>
     </div>
     <div class="right-column">
-      <p>
-        <a href="#">
-          <%= image_tag "video_07.jpg" %>
-        </a>
-      </p>
-      <h3><a href="#">卢森堡</a></h3>
-
-      <p>
-        <a href="#">
-          <%= image_tag "video_14.jpg" %>
-        </a>
-      </p>
-      <h3><a href="#">李梦桥</a></h3>
-
-      <p>
-        <a href="#">
-          <%= image_tag "video_20.jpg" %>
-        </a>
-      </p>
-      <h3><a href="#">无标题</a></h3>
+      <% @videos.each_with_index do |video, index| %>
+      <% next if index % 3 != 2 %>
+      <p><%= link_to image_tag(video.cover_url(:on_use)), video %></p>
+      <h3><%= link_to video.title, video %></h3>
+      <% end %>
     </div>
   </div>
 </div>

@@ -88,7 +88,7 @@
 	-------------------------------------------------------------------------------- */
 	.left-column,
 	.center-column,
-	.right-column,
+	.right-column{width: 31.3%;}
 	.image-set > a{width: 25.2%;}
 	.image-set > a{margin-right: 12%;}
 	.image-set > a img{width: 100%;}

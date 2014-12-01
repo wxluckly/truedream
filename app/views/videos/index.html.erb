@@ -27,3 +27,10 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  $(function(){
+    var barW = $(".right-column").width();
+    var barWF = Math.floor(barW*0.516)
+    $(".left-column > p,.center-column > p,.right-column > p").css({"height":barWF});
+  })
+</script>

@@ -34,7 +34,10 @@
 .header,
 .left-column h3,
 .center-column h3,
-.right-column h3{ margin-bottom: 3.875em; width: 100%; white-space: nowrap;height: 1em; overflow: hidden; text-overflow:ellipsis; color: #999999;}
+.right-column h3{ margin-bottom: 3.875em;}
+.left-column h3,
+.center-column h3,
+.right-column h3{ width: 100%; white-space: nowrap;height: 1em; overflow: hidden; text-overflow:ellipsis;}
 
 .left-column h3 a,
 .center-column h3 a,

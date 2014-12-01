@@ -3,12 +3,10 @@
 <li><%= msg %></li>
 <% end %>
 <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
-<%= f.input :sku, label: '商品标识码' %>
-<%= f.input :price, label: '价格' %>
-<%= f.input :weight, label: '重量' %>
-<%= f.input :dimensions, label: '包装大小' %>
-<%= f.input :summary, label: '产品介绍' %>
-<%= f.input :stock, label: '库存' %>
+<%= f.input :title, label: '标题' %>
+<%= f.input :content, label: '内容' %>
+<%= f.input :cover, label: '封面' %>
+<%= f.input :photo, label: '正文大图' %>
 
 <div class="control-group">
   <div class="controls">

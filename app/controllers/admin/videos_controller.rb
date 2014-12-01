@@ -49,7 +49,7 @@ class Admin::VideosController < Admin::BaseController
 
   private
   def video_params
-    params.require(:video).permit(:sku, :price, :weight, :dimensions, :summary, :stock)
+    params.require(:video).permit(:title, :content, :cover, :video)
   end
 
 end

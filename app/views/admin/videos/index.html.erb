@@ -3,18 +3,18 @@
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th>商品标识码</th>
-      <th>价格</th>
-      <th>库存</th>
+      <th>缩略图</th>
+      <th>标题</th>
+      <th>内容</th>
       <th>操作</th>
     </tr>
   </thead>
   <tbody>
     <% @videos.each do |video| %>
     <tr>
-      <td><%= video.sku %></td>
-      <td><%= video.price %></td>
-      <td><%= video.stock %></td>
+      <td><%= image_tag(video.cover_url(:thumb)) %></td>
+      <td><%= video.title %></td>
+      <td><%= video.content %></td>
       <td>
         <%= link_to '编辑', edit_admin_video_path(video, category: params[:category]) %>
         <%= link_to '删除', admin_video_path(video, category: params[:category]), method: :delete, data: { confirm: '确定删除吗?' } %>
@@ -26,6 +26,6 @@
 <%= will_paginate @videos %>
 <% else %>
 <div>
- 暂无内容
+  暂无内容
 </div>
 <% end %>

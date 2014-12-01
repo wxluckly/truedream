@@ -49,7 +49,7 @@ class Admin::PhotosController < Admin::BaseController
 
   private
   def photo_params
-    params.require(:photo).permit(:sku, :price, :weight, :dimensions, :summary, :stock)
+    params.require(:photo).permit(:title, :content, :cover, :photo)
   end
 
 end

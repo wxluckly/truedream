@@ -1,7 +1,7 @@
 class Admin::PhotosController < Admin::BaseController
 
   def index
-    @photos = Photo.paginate(page: params[:page]).order("id desc")
+    @photos = Photo.sort_order.paginate(page: params[:page])
   end
 
   def new

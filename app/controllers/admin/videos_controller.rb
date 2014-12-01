@@ -1,7 +1,7 @@
 class Admin::VideosController < Admin::BaseController
 
   def index
-    @videos = Video.paginate(page: params[:page]).order("id desc")
+    @videos = Video.sort_order.paginate(page: params[:page])
   end
 
   def new

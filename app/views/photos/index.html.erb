@@ -2,11 +2,11 @@
   <!-- header -->
   <%= render "header" %>
   <!-- <link rel="stylesheet" href="css/lightbox.css"> 新添加css -->
-  
+
   <!-- main-content -->
   <div class="main-content clearfix">
 		<div class="image-set">
-			<!-- href里是大图的路径:任何比例尺寸； src是小图路径：250*360px  -->
+			<!-- href里是大图的路径，尺寸要求：任何比例尺寸； src是小图路径，尺寸要求：250*360px  -->
 			<a class="example-image-link" href="<%= image_url "Athletic_385.jpg" %>" data-lightbox="example-set" data-title="描述文字">
 				<%= image_tag "Athletic_385.jpg", class:"class", alt:"1a" %>
 			</a>

@@ -25,7 +25,7 @@
 
 .left-column p img,
 .center-column p img,
-.right-column p img{ width: 100%;}
+.right-column p img{ width: auto; max-width: 100%;_width:100%;}
 
 .left-column p,
 .center-column p,
@@ -50,7 +50,8 @@
 .film{ margin-bottom:1.25em;}
 .film h3{ font-size: 0.8125em; color: #999999;line-height:1.625em;}
 
-	
+	/* contact-content
+	-------------------------------------------------------------------------------- */
 	.contact-content{ padding-top: 2.625em;}
 	.contact-content h2,
 	.contact-content p{ font-size: 0.8125em; font-family: Arial; line-height: 1.875em; margin: 0;}
@@ -69,15 +70,28 @@
 	.info-right-bar h2 em{ color: #cfe7f2; font-style: normal; font-family: Arial; padding-left:0.384em; }
 	.info-right-bar p{ margin-bottom: 2.92em;line-height: 1.846em;}
 
+	/* images
+	-------------------------------------------------------------------------------- */
+	.left-column .lightBox,
+	.center-column .lightBox,
+	.right-column .lightBox{ margin-bottom: 0.5em;}
+	.image-set > a{ overflow: hidden; display: block; float: left; width: 250px;margin-right: 90px; margin-bottom: 3em;}
+	.image-set > a > img{ max-width: 100%; _width: 100%;}
+
+
 @media screen and (max-width : 990px) {
 	.header,
 	.main-content,
 	.footer{width: 98%;}
+	
 	/* main-content
 	-------------------------------------------------------------------------------- */
 	.left-column,
 	.center-column,
-	.right-column{width: 31.3%;}
+	.right-column,
+	.image-set > a{width: 25.2%;}
+	.image-set > a{margin-right: 12%;}
+	.image-set > a img{width: 100%;}
 
 	.center-column,
 	.right-column{margin-left: 3%;}
@@ -93,7 +107,7 @@
 	.film,
 	.film video{ width: 80%; height: auto;}
 	.film video{ width: 100%;}
-	
+
 	.film video,
 	.film video source{ height: auto;}
 }
@@ -108,10 +122,12 @@
 	.header{ padding-top: 2em;}
 	.logo{ width: 17%;}
 	.main-content{ margin-top: 0.5em;}
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	body,
 	.nav-ul li{font-size: 8px;}
+
 }
 

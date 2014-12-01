@@ -4,4 +4,8 @@ class VideosController < ApplicationController
     @videos = Video.sort_order
   end
 
+  def show
+    @video = Video.find(params[:id])
+  end
+
 end

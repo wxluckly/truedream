@@ -86,11 +86,24 @@
 
 	/* pagination
 	-------------------------------------------------------------------------------- */
-	.pagination{ clear: both; font-size: 12px; line-height: 2em;font-family: 'Microsoft YaHei';}
+	.pagination{ clear: both; font-size: 0;font-size: 12px;font-family: 'Microsoft YaHei'; margin: 3em auto; text-align: right;}
+
 	.pagination span,
 	.pagination em,
-	.pagination a{ display:inline-block;*display:inline; *zoom:1;}
+	.pagination a{ text-align: center; font-size: 12px; line-height: 2em; color: #999999; margin-right: 4px; display:inline-block;*display:inline; *zoom:1; border:1px solid #e2e2e2; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px;}
 
+	.pagination em,
+	.pagination a{ width: 2em; height: 2em; }
+
+	.pagination em{ border:0; cursor: not-allowed;}
+	.pagination .current{border-color: #389dca;color: #389dca; border:1px solid #e2e2e2; cursor: default;}
+
+	.pagination .previous_page,
+	.pagination .next_page{ width: auto; height: 2em; padding: 0 4px;}
+
+	.pagination .next_page{margin: 0;}
+	.pagination a:hover{color: #389dca;}
+	.pagination .disabled{border-color: #eeeeee;color: #e2e2e2; cursor: not-allowed;}
 
 
 @media screen and (max-width : 990px) {
@@ -135,6 +148,9 @@
 	.header{ padding-top: 2em;}
 	.logo{ width: 17%;}
 	.main-content{ margin-top: 0.5em;}
+	.pagination span,
+	.pagination em,
+	.pagination a{font-size: 8px;}
 
 }
 

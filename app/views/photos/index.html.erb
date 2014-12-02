@@ -20,7 +20,8 @@
 	$(function(){
 		$(".image-set > a:nth-child(3n)").css({"margin-right":0});
 		var aW = $(".image-set > a").width();
-		$(".image-set > a").css({"height":aW*1.44});
+		var aWF = Math.floor(aW*1.44);
+		$(".image-set > a").css({"height":aWF+"px"});
 	})
 </script>
 <% end %>

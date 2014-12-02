@@ -30,11 +30,30 @@ class PhotoUploader < CarrierWave::Uploader::Base
   def rotate_it
     exif = MiniExiftool.new self.path
     if exif.orientation == "Rotate 90 CW"
+      exif.orientation = 'Horizontal (normal)'
+      exif.save
       manipulate! do |img| 
         img.rotate "90"
         img
       end
+    elsif exif.orientation == "Rotate 270 CW"
+      exif.orientation = 'Horizontal (normal)'
+      exif.save
+      manipulate! do |img| 
+        img.rotate "-90"
+        img
+      end
     end
+  end
+
+  def filename
+    "#{secure_token}.#{file.extension}" if original_filename.present?
+  end
+
+  protected
+  def secure_token
+    var = :"@#{mounted_as}_secure_token"
+    model.instance_variable_get(var) or model.instance_variable_set(var, SecureRandom.uuid)
   end
 
 end

@@ -12,6 +12,7 @@
 			</a>
 			<% end %>
 		</div>
+		<%= will_paginate @photos, previous_label: '上一页', next_label: '下一页' %>
 	</div>
 </div>
 <% content_for :js do %>

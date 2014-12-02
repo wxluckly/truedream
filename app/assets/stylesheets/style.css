@@ -23,30 +23,30 @@
 .center-column,
 .right-column{margin-left: 30px;}
 
-.left-column > p img,
-.center-column > p img,
-.right-column > p img{ width: auto; max-width: 100%;_width:100%; vertical-align: middle;}
+.left-column p img,
+.center-column p img,
+.right-column p img{ width: auto; max-width: 100%;_width:100%; vertical-align: middle;}
 
-.left-column > p,
-.center-column > p,
-.right-column > p{ margin-bottom: 0.5em; line-height: 0; overflow: hidden; background: #f2f2f2; text-align: center;}
+.left-column p,
+.center-column p,
+.right-column p{ margin-bottom: 0.5em; line-height: 0; overflow: hidden; background: #f2f2f2; text-align: center;}
 
 .header,
-.left-column > h3,
-.center-column > h3,
-.right-column > h3{ margin-bottom: 3.875em;}
+.left-column h3,
+.center-column h3,
+.right-column h3{ margin-bottom: 3.875em;}
 
-.left-column > h3,
-.center-column > h3,
-.right-column > h3{ width: 100%; white-space: nowrap;height: 1em; overflow: hidden; text-overflow:ellipsis; color: #999999;}
+.left-column h3,
+.center-column h3,
+.right-column h3{ width: 100%; white-space: nowrap;height: 1em; *height: 1.2em; overflow: hidden; text-overflow:ellipsis; color: #999999;}
 
-.left-column > h3 a,
-.center-column > h3 a,
-.right-column > h3 a{ font-size: 0.8125em; color: #999999;line-height: 0.8125em;}
+.left-column h3 a,
+.center-column h3 a,
+.right-column h3 a{ font-size: 0.8125em; color: #999999;line-height: 0.8125em;*line-height: 1.2em;}
 
-.left-column > h3 a:hover,
-.center-column > h3 a:hover,
-.right-column > h3 a:hover{color: #389dca;}
+.left-column h3 a:hover,
+.center-column h3 a:hover,
+.right-column h3 a:hover{color: #389dca;}
 
 .film,
 .film video,
@@ -63,7 +63,7 @@
 	.contact-content p{ font-size: 0.8125em; font-family: Arial; line-height: 1.875em; margin: 0;}
 	.contact-content h2{ border-bottom: 1px solid #999999;}
 	.contact-content .line{ width: 1.875em; height: 1px; line-height: 0; margin-bottom: 0.625em; _font-size: 1px; _width: 30em; _margin-bottom: 10em; background: #999999;}
-	.contact-content p{ color: #999999;word-wrap: break-word;}
+	.contact-content p{ color: #999999;word-wrap: break-word; overflow: visible; text-align: left; background: transparent;}
 	.contact-content-fa p{ position: relative; margin-left: 1.8em;}
 	.contact-content-fa p .fa{ font-size: 1.384em; line-height: 1.384em; vertical-align: middle; text-indent: 0; position: absolute; left:-1.277em; top: 0;}
 
@@ -81,8 +81,16 @@
 	.left-column .lightBox,
 	.center-column .lightBox,
 	.right-column .lightBox{ margin-bottom: 0.5em;}
-	.image-set > a{ overflow: hidden; display: block; float: left; width: 250px;margin-right: 90px; margin-bottom: 3em; background: #f2f2f2; text-align: center;}
-	.image-set > a > img{ max-width: 100%; _width: 100%;}
+	.image-set a{ overflow: hidden; display: block; float: left; width: 250px;margin-right: 90px; margin-bottom: 3em; background: #f2f2f2; text-align: center;}
+	.image-set a img{ max-width: 100%; _width: 100%;}
+
+	/* pagination
+	-------------------------------------------------------------------------------- */
+	.pagination{ clear: both; font-size: 12px; line-height: 2em;font-family: 'Microsoft YaHei';}
+	.pagination span,
+	.pagination em,
+	.pagination a{ display:inline-block;*display:inline; *zoom:1;}
+
 
 
 @media screen and (max-width : 990px) {

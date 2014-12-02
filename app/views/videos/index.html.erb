@@ -25,7 +25,7 @@
       <h3><%= link_to video.title, video %></h3>
       <% end %>
     </div>
-    <%= will_paginate @videos %>
+    <%= will_paginate @videos, previous_label: '上一页', next_label: '下一页' %>
   </div>
 </div>
 <% content_for :js do %>

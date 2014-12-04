@@ -9,18 +9,17 @@
       <div class="contact-content contact-content-fa">
         <h2>联系我们：</h2>
         <div class="line"></div>
-        <p><i class="fa fa-weixin"></i>:xinmengxiang</p>
-        <p><i class="fa fa-weibo"></i>:http://weibo.com/xinmengxiangdahui</p>
-        <p><i class="fa fa-envelope"></i>:xinmengxiang@qq.com</p>
+        <p><i class="fa fa-weixin"></i>:xinmengxiangdahui</p>
+        <p><i class="fa fa-weibo"></i>:<a href="http://weibo.com/xinmengxiangdahui">新梦想大会</a></p>
+        <p><i class="fa fa-envelope"></i>:truedreamcc@163.com</p>
       </div>
     </div>
     <div class="center-column">
       <div class="contact-content">
         <h2>其它联系方式：</h2>
         <div class="line"></div>
-        <p>地址：北京市朝阳区人民文化宫</p>
-        <p>电话：010-1234-5678</p>
-        <p>传真：010-1234-5678</p>
+        <p>地址：北京市东城区天安门东劳动人民文化宫东南角</p>
+        <p>电话：010-6524-6868</p>
       </div>
     </div>
     <div class="right-column">
@@ -39,13 +38,13 @@
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=2b866a6daac9014292432d81fe9b47e3"></script>  
 <script type="text/javascript">  
     var map = new BMap.Map("container");  
-    map.centerAndZoom(new BMap.Point(116.403884,39.914887), 13);  
+    map.centerAndZoom(new BMap.Point(116.4085,39.917979), 13);  
     map.enableScrollWheelZoom();  
-    var marker=new BMap.Marker(new BMap.Point(116.403884,39.914887));  
+    var marker=new BMap.Marker(new BMap.Point(116.4085,39.917979));  
     map.addOverlay(marker);  
     var licontent="<b>天安门</b><br>";  
-        licontent+="<span><strong>地址：</strong>北京市东城区天安门广场北侧</span><br>";  
-        licontent+="<span><strong>电话：</strong>(010)63095718,(010)63095630</span><br>";  
+        licontent+="<span><strong>地址：</strong>北京市东城区天安门东劳动人民文化宫东南角</span><br>";  
+        licontent+="<span><strong>电话：</strong>(010)6524-6868</span><br>";  
         licontent+="<span class=\"input\"><strong></strong><input class=\"outset\" type=\"text\" name=\"origin\" value=\"北京站\"/><input class=\"outset-but\" type=\"button\" value=\"公交\" onclick=\"gotobaidu(1)\" /><input class=\"outset-but\" type=\"button\" value=\"驾车\"  onclick=\"gotobaidu(2)\"/><a class=\"gotob\" href=\"url=\"http://api.map.baidu.com/direction?destination=latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:天安门"+"®ion=北京"+"&output=html\" target=\"_blank\"></a></span>";
  
     var hiddeninput="<input type=\"hidden\" value=\""+'北京'+"\" name=\"region\" /><input type=\"hidden\" value=\"html\" name=\"output\" /><input type=\"hidden\" value=\"driving\" name=\"mode\" /><input type=\"hidden\" value=\"latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:天安门"+"\" name=\"destination\" />";

@@ -9,7 +9,10 @@
       <div class="contact-content contact-content-fa">
         <h2>联系我们：</h2>
         <div class="line"></div>
-        <p><i class="fa fa-weixin"></i>：xinmengxiangdahui</p>
+        <p class="new-dream-weixin">
+            <%= image_tag "code.png" %>
+            <i class="fa fa-weixin"></i>:<a href="#">xinmengxiang</a>
+        </p>
         <p><i class="fa fa-weibo"></i>：<a href="http://weibo.com/xinmengxiangdahui" target="_blank">新梦想大会</a></p>
         <p><i class="fa fa-envelope"></i>：<a href="mailto:truedreamcc@163.com" class="social-media__icon twitter">truedreamcc@163.com</a></p>
       </div>
@@ -77,5 +80,20 @@
             }  
         }  
     }    
+</script>
+<script type="text/javascript">
+    $(function(){
+        $(".new-dream-weixin").click(function (event) {
+            if($('.new-dream-weixin img').is(":visible")){
+                $content.hide();
+                }else{
+                    $('.new-dream-weixin img').show();
+            };
+            $(document).one("click", function () {//对document绑定一个隐藏Div方法
+                $(".new-dream-weixin img").hide();
+            });
+            event.stopPropagation();//点击Button阻止事件冒泡到document
+        });
+    })
 </script>
 <% end %>

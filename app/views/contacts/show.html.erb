@@ -83,16 +83,10 @@
 </script>
 <script type="text/javascript">
     $(function(){
-        $(".new-dream-weixin").click(function (event) {
-            if($('.new-dream-weixin img').is(":visible")){
-                $content.hide();
-                }else{
-                    $('.new-dream-weixin img').show();
-            };
-            $(document).one("click", function () {//对document绑定一个隐藏Div方法
-                $(".new-dream-weixin img").hide();
-            });
-            event.stopPropagation();//点击Button阻止事件冒泡到document
+        $('.new-dream-weixin a').hover(function(){
+           $('.new-dream-weixin img').show();
+          },function(){
+            $('.new-dream-weixin img').hide();
         });
     })
 </script>

@@ -1,0 +1,27 @@
+<style type="text/css">
+ .login {
+ 	 border: 1px solid #ccc;
+ 	 padding: 20px 20px 20px 9%;
+ 	 width: 30%;
+ 	 margin: 0 auto;
+ }
+</style>
+
+<div class="login">
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, autofocus: true %></div>
+
+  <div><%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %></div>
+
+  <div><%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
+
+  <div><%= f.submit "注册", class: 'btn' %></div>
+<% end %>
+
+<%#= render "devise/shared/links" %>
+</div>

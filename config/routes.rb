@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :staffers, controllers: { sessions: 'admin/sessions', registrations: 'admin/admins' }
-  root 'videos#index'
+  root 'welcome#index'
 
   resource :biography
   resource :contact

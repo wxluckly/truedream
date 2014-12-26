@@ -17,6 +17,11 @@
 /* main-content
 -------------------------------------------------------------------------------- */
 
+.banner{position: relative; margin-bottom: 6%;}
+.banner img{ width: 100%;}
+.banner .qr-code img{ max-width: 99px;_width: 99px;}
+.banner .qr-code{ position: absolute; bottom: 20px; right: 30px;}
+
 .left-column,
 .center-column,
 .right-column{ float: left; width: 310px;}
@@ -80,6 +85,10 @@
 	.info-right-bar h2{font-family: 'Microsoft YaHei'; margin-bottom: 1.538em;}
 	.info-right-bar h2 em{ color: #cfe7f2; font-style: normal; font-family: Arial; padding-left:0.384em; }
 	.info-right-bar p{ margin-bottom: 2.92em;line-height: 1.846em;}
+	.info-right-bar .right-bar-txt{ color: #666666;margin-top: -1.846em;}
+	.info-right-bar .right-bar-txt p{margin-bottom: 1em; line-height: 2.4em;}
+	.info-right-bar .right-bar-txt .wisdom{font-weight: bold;}
+	.info-right-bar .right-bar-txt .p-left{text-align: right;font-weight: bold;}
 
 	/* images
 	-------------------------------------------------------------------------------- */
@@ -167,7 +176,8 @@
 	.pagination em,
 	.pagination a{font-size: 8px;}
 	.map-model{ height:280px;}
-
+	.banner .qr-code img{ width: 70px;}
+	.banner .qr-code{ bottom: 10px; right: 10px;}
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

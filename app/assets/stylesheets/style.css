@@ -100,6 +100,42 @@
 	.image-set0 a{ overflow: hidden; display: block; float: left; width: 270px;margin-right: 90px; margin-bottom: 3em; background: #f2f2f2; text-align: center;}
 	.image-set0 a img{ max-width: 100%; _width: 100%;}
 
+	/* news
+	-------------------------------------------------------------------------------- */
+	.news-content {font-family: 'Microsoft YaHei';font-size: 14px;}
+	.news-content .news-list,
+	.news-content .news-list-img{border-bottom: 1px solid #e3e4e8; padding-bottom: 2em; margin-bottom: 3em;}
+
+	.news-content .news-list h2,
+	.news-content .news-list-img h2{font-size: 1.142em; line-height: 1.2em; margin-bottom: 0.8em;}
+
+
+	.news-content .news-list h2 a,
+	.news-content .news-list-img h2 a,
+	.news-content .news-list p a,
+	.news-content .news-list-img p a{ color: #2f2f2f;}
+
+	.news-content .news-list p,
+	.news-content .news-list-img p{font-size: 0.857em; line-height: 1.8em; color: #666666;}
+	.news-content .news-info{margin-top: 0.8em;}
+
+	.news-content .news-list .news-info span,
+	.news-content .news-list-img .news-info span,
+	.news-content .news-list .news-info a,
+	.news-content .news-list-img .news-info a{ color: #999999; padding-right: 2.833em;}
+
+	.news-content .news-list .news-info i,
+	.news-content .news-list-img .news-info i{margin-right: 0.333em;}
+
+	.news-content .news-list .news-info .fa-heart,
+	.news-content .news-list-img .news-info .fa-heart{color: #f05a2c;}
+
+	.news-left{ width: 66%; float: left;}
+	.news-right{ width: 31.5%; float: right;}
+	.news-right img{ width: 100%; float: right; max-height: 15.6em;}
+
+
+
 	/* pagination
 	-------------------------------------------------------------------------------- */
 	.pagination{ clear: both; font-size: 0;font-size: 12px;font-family: 'Microsoft YaHei'; margin: 3em auto; text-align: right;}
@@ -178,6 +214,11 @@
 	.map-model{ height:280px;}
 	.banner .qr-code img{ width: 70px;}
 	.banner .qr-code{ bottom: 10px; right: 10px;}
+	.news-content {font-family: 'Microsoft YaHei';font-size: 8px;}
+	.news-content .news-list .news-info span,
+	.news-content .news-list-img .news-info span,
+	.news-content .news-list .news-info a,
+	.news-content .news-list-img .news-info a{ padding-right: 1.6em;}
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

@@ -6,12 +6,14 @@ Rails.application.routes.draw do
   resource :contact
   resources :photos
   resources :videos
+  resources :news
 
   namespace :admin do 
     root 'welcome#index'
     resource :biography
     resources :photos
     resources :videos
+    resources :news
   end
 
 end

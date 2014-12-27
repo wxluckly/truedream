@@ -6,6 +6,7 @@
     <ul class="nav-ul">
       <li <% if current_page?(controller: 'videos') %>class="active"<% end %>><%= link_to "大会视频", videos_path %></li>
       <li <% if current_page?(controller: 'photos') %>class="active"<% end %>><%= link_to "大会图片", photos_path %></li>
+      <li <% if current_page?(controller: 'news') %>class="active"<% end %>><%= link_to "大会新闻", news_index_path %></li>
       <li <% if current_page?(controller: 'biographies', action: 'show') %>class="active"<% end %>><%= link_to "关于她", biography_path %></li>
       <li <% if current_page?(controller: 'contacts', action: 'show') %>class="active"<% end %>><%= link_to "联系我们", contact_path %></li>
     </ul>

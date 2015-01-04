@@ -5,7 +5,7 @@
 	<!-- main-content -->
 	<div class="main-content clearfix">
 		<div class="image-set">
-			<!-- href里是大图的路径，尺寸要求：任何比例尺寸； src是小图路径，尺寸要求：250*360px  -->
+			<!-- href里是大图的路径，尺寸要求：任何比例尺寸； src是小图路径，尺寸要求：310*195px  -->
 			<% @photos.each do |photo| %>
 			<a class="example-image-link" href="<%= image_url photo.photo_url(:big) %>" data-lightbox="example-set" data-title="<%= photo.title %>">
 				<%= image_tag photo.photo_url(:on_use) %>

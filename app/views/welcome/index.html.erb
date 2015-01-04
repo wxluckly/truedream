@@ -47,6 +47,7 @@
 <% content_for :js do %>
 <script type="text/javascript">
   $(function(){
+    $('.flicker-example').flicker();
     var flW = $(".flickerplate").width();
     var flWF = Math.floor(flW*0.48);
     $(".flickerplate").css({"height":flWF+"px"});

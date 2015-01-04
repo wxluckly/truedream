@@ -11,4 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-
+//= require sliderjs/modernizr-custom-v2.7.1.min.js
+//= require sliderjs/jquery-finger-v0.1.0.min.js
+//= require sliderjs/flickerplate.min.js

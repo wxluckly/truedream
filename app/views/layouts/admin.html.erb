@@ -21,6 +21,9 @@
             <li <% if current_page?(controller: 'photos') %>class="active"<% end %>>
               <%= link_to "图片管理", admin_photos_path %>
             </li>
+            <li <% if current_page?(admin_news_index_path) %>class="active"<% end %>>
+              <%= link_to "新闻管理", admin_news_index_path %>
+            </li>
             <li <% if current_page?(edit_admin_biography_path) %>class="active"<% end %>>
               <%= link_to "简介管理", edit_admin_biography_path %>
             </li>

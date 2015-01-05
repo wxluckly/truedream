@@ -14,7 +14,7 @@
           <p class="news-info">
             <span>发布日期：<%= news.published_at.strftime('%Y.%m.%d') rescue nil %></span>
             <% if news.source.present? %><span>来源：<%= news.source %></span><% end %>
-            <a href="#"><i class="fa fa-heart"></i><%= news.star %></a>
+            <a href="#"><i class="fa fa-heart"></i><%= news.star || 0 %></a>
             <a href="#"><i class="fa fa-share-alt"></i>分享</a>
           </p>
         </div>
@@ -29,7 +29,7 @@
         <p class="news-info">
           <span>发布日期：<%= news.published_at.strftime('%Y.%m.%d') rescue nil %></span>
           <% if news.source.present? %><span>来源：<%= news.source %></span><% end %>
-          <a href="#"><i class="fa fa-heart"></i><%= news.star %></a>
+          <a href="#"><i class="fa fa-heart"></i><%= news.star || 0 %></a>
           <a href="#"><i class="fa fa-share-alt"></i>分享</a>
         </p>
       </div>

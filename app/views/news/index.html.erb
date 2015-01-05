@@ -10,11 +10,11 @@
       <div class="news-list-img clearfix">
         <div class="news-left">
           <h2><%= link_to news.title, news %></h2>
-          <p><%= news.content.truncate(80) %><%= link_to '［详情］', news %></p>
+          <p><%= news.content.truncate(350) %><%= link_to '［详情］', news %></p>
           <p class="news-info">
             <span>发布日期：<%= news.published_at.strftime('%Y.%m.%d') rescue nil %></span>
             <% if news.source.present? %><span>来源：<%= news.source %></span><% end %>
-            <a href="#"><i class="fa fa-heart"></i><%= news.star %></a>
+            <a href="#"><i class="fa fa-heart"></i><%= news.star || 0 %></a>
             <a href="#"><i class="fa fa-share-alt"></i>分享</a>
           </p>
         </div>
@@ -25,11 +25,11 @@
       <% else %>
       <div class="news-list">
         <h2><%= link_to news.title, news %></h2>
-        <p><%= news.content.truncate(100) %><%= link_to '［详情］', news %></p>
+        <p><%= news.content.truncate(500) %><%= link_to '［详情］', news %></p>
         <p class="news-info">
           <span>发布日期：<%= news.published_at.strftime('%Y.%m.%d') rescue nil %></span>
           <% if news.source.present? %><span>来源：<%= news.source %></span><% end %>
-          <a href="#"><i class="fa fa-heart"></i><%= news.star %></a>
+          <a href="#"><i class="fa fa-heart"></i><%= news.star || 0 %></a>
           <a href="#"><i class="fa fa-share-alt"></i>分享</a>
         </p>
       </div>

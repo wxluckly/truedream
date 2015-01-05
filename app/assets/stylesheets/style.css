@@ -17,7 +17,7 @@
 /* main-content
 -------------------------------------------------------------------------------- */
 
-.banner{position: relative; margin-bottom: 6%;}
+.banner{position: relative; margin-bottom: 6%; font-size: 16px;}
 .banner img{ width: 100%;}
 .banner .qr-code img{ max-width: 99px;_width: 99px;}
 .banner .qr-code{ position: absolute; bottom: 20px; right: 30px;}
@@ -81,14 +81,17 @@
 	-------------------------------------------------------------------------------- */
 	.info-left-bar{ width: 34.3%; float: left;}
 	.info-left-bar img{width: 100%;}
-	.info-right-bar{ width: 63.4%; float: right;font-size: 0.8125em; color: #999999; padding-top: 1.846em; }
+	.info-right-bar{ width: 63.4%; float: right;font-size: 0.8125em; font-family: 'Microsoft YaHei',Arial; color: #999999; padding-top: 1.846em; }
 	.info-right-bar h2{font-family: 'Microsoft YaHei'; margin-bottom: 1.538em;}
 	.info-right-bar h2 em{ color: #cfe7f2; font-style: normal; font-family: Arial; padding-left:0.384em; }
-	.info-right-bar p{ margin-bottom: 2.92em;line-height: 1.846em;}
+	.info-right-bar p{ margin-bottom: 0;line-height: 1.846em;}
 	.info-right-bar .right-bar-txt{ color: #666666;margin-top: -1.846em;}
-	.info-right-bar .right-bar-txt p{margin-bottom: 1em; line-height: 2.4em;}
-	.info-right-bar .right-bar-txt .wisdom{font-weight: bold;}
-	.info-right-bar .right-bar-txt .p-left{text-align: right;font-weight: bold;}
+	.info-right-bar .right-bar-txt p{margin-bottom: 0; line-height: 2.6em;}
+	.info-right-bar .wisdom{ font-size: 1.076em; margin: 1em 0; font-family: SimHei;}
+	.info-right-bar .right-bar-txt .p-left{text-align: right;}
+	.p-focus { text-indent: 2em;}
+	.p-focus span{font-size: 1.846em;font-family: SimHei;}
+	.about-content{font-family: SimSun;}
 
 	/* images
 	-------------------------------------------------------------------------------- */
@@ -212,6 +215,7 @@
 	.pagination em,
 	.pagination a{font-size: 8px;}
 	.map-model{ height:280px;}
+	.banner{font-size: 8px;}
 	.banner .qr-code img{ width: 70px;}
 	.banner .qr-code{ bottom: 10px; right: 10px;}
 	.news-content {font-family: 'Microsoft YaHei';font-size: 8px;}

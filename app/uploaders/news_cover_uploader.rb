@@ -10,7 +10,7 @@ class NewsCoverUploader < CarrierWave::Uploader::Base
 
 
   version :on_use do
-    process resize_to_fill: [312, 218]
+    process resize_to_fill: [310, 160]
   end
 
   version :thumb do

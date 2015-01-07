@@ -4,7 +4,7 @@
 <% end %>
 <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
 <%= f.input :title, label: '标题' %>
-<%= f.input :content, label: '内容', input_html: {class: "input-xxlarge"} %>
+<%= f.input :content, as: :kindeditor, label: '内容', input_html: {window_onload: true, filterMode: false} %>
 <%= f.input :published_at, label: '发布时间', include_seconds: true %>
 <%= f.input :source, label: '来源' %>
 <%= f.input :cover, label: '封面图(可选)' %>

@@ -20,7 +20,7 @@
 /* main-content
 -------------------------------------------------------------------------------- */
 
-.banner{position: relative; margin-bottom: 6%; font-size: 16px;}
+.banner{position: relative; margin-bottom: 6%; font-size: 16px; min-height: 120px;}
 .banner img{ width: 100%;}
 .banner .qr-code img{ max-width: 99px;_width: 99px;}
 .banner .qr-code{ position: absolute; bottom: 20px; right: 30px;}

@@ -14,7 +14,7 @@
     <tr>
       <td><%= image_tag(news.cover_url(:thumb)) %></td>
       <td><%= news.title %></td>
-      <td><%= news.content %></td>
+      <td><%= strip_tags(news.content).html_safe.remove("&nbsp;").truncate(500) %></td>
       <td>
         <%= link_to '编辑', edit_admin_news_path(news, category: params[:category]) %>
         <%= link_to '删除', admin_news_path(news, category: params[:category]), method: :delete, data: { confirm: '确定删除吗?' } %>

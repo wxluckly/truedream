@@ -5,11 +5,11 @@
     </div>
     <ul class="nav-ul">
       <li <% if current_page?('/') %>class="active"<% end %>><%= link_to "<span>首页</span><em>Home</em>".html_safe, "/" %></li>
-      <li <% if current_page?(controller: 'videos') %>class="active"<% end %>><%= link_to "<span>大会视频</span><em>Video</em>".html_safe, videos_path %></li>
-      <li <% if current_page?(controller: 'photos') %>class="active"<% end %>><%= link_to "<span>大会图片</span><em>Picture</em>".html_safe, photos_path %></li>
-      <li <% if current_page?(controller: 'news') %>class="active"<% end %>><%= link_to "<span>大会新闻</span><em>News</em>".html_safe, news_index_path %></li>
-      <li <% if current_page?(controller: 'biographies', action: 'show') %>class="active"<% end %>><%= link_to "<span>关于她</span><em>About</em>".html_safe, biography_path %></li>
-      <li <% if current_page?(controller: 'contacts', action: 'show') %>class="active"<% end %>><%= link_to "<span>联系我们</span><em>Contact</em>".html_safe, contact_path %></li>
+      <li <% if current_page?(controller: 'videos') %>class="active"<% end %>><%= link_to "<span>新梦想视频</span><em>TD Video</em>".html_safe, videos_path %></li>
+      <li <% if current_page?(controller: 'photos') %>class="active"<% end %>><%= link_to "<span>新梦想图片</span><em>TD Picture</em>".html_safe, photos_path %></li>
+      <li <% if current_page?(controller: 'news') %>class="active"<% end %>><%= link_to "<span>新梦想新闻</span><em>TD News</em>".html_safe, news_index_path %></li>
+      <li <% if current_page?(controller: 'biographies', action: 'show') %>class="active"<% end %>><%= link_to "<span>关于发心</span><em>About Mercy</em>".html_safe, biography_path %></li>
+      <li <% if current_page?(controller: 'contacts', action: 'show') %>class="active"<% end %>><%= link_to "<span>联系我们</span><em>Contact Us</em>".html_safe, contact_path %></li>
     </ul>
   </div>
 </div>

@@ -162,8 +162,7 @@
 
 	.news-content-box .news-info i{margin-right: 0.333em;}
 	.news-content-box .news-info .fa-heart{color: #f05a2c;}
-	.news-main{ font-size: 1.166em; line-height: 1.5em; color: #666666; text-align: center;}
-	.news-main p{margin-bottom: 0.5em; text-align: left;}
+	.news-main p{margin-bottom: 0.5em;}
 	.news-main img{margin: 2em auto; max-width: 100%;}
 	/* pagination
 	-------------------------------------------------------------------------------- */

@@ -164,7 +164,7 @@
 	.news-content-box .news-info .fa-heart{color: #f05a2c;}
 	.news-main{ font-size: 1.166em; line-height: 1.5em; color: #666666; text-align: center;}
 	.news-main p{margin-bottom: 0.5em; text-align: left;}
-	.news-main img{margin: 2em auto;}
+	.news-main img{margin: 2em auto; max-width: 100%;}
 	/* pagination
 	-------------------------------------------------------------------------------- */
 	.pagination{ clear: both; font-size: 0;font-size: 12px;font-family: 'Microsoft YaHei'; margin: 3em auto; text-align: right;}

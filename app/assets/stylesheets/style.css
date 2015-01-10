@@ -206,6 +206,8 @@
 	.left-column,
 	.center-column,
 	.right-column{width: 31.3%;}
+	.contact-col .left-column,
+	.contact-col .center-column{width: 48.48%;}
 	
 	.image-set > a{width: 31.3%;margin-right: 3%;}
 	.image-set > a img{max-width: 100%;}

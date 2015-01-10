@@ -188,6 +188,12 @@
 	.pagination a:hover{color: #389dca;}
 	.pagination .disabled{border-color: #eeeeee;color: #e2e2e2; cursor: not-allowed;}
 
+
+	/* Icon
+	-------------------------------------------------------------------------------- */
+	.fa-heart-o,
+	.fa-heart{color: #f05a2c;}
+
 	/* Map
 	-------------------------------------------------------------------------------- */
 	#gotobaiduform{ line-height: 16px; font-size: 12px;}

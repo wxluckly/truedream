@@ -15,7 +15,6 @@
             <span>发布日期：<%= news.published_at.strftime('%Y.%m.%d') rescue nil %></span>
             <% if news.source.present? %><span>来源：<%= news.source %></span><% end %>
             <a href="javascript:void(0);" onclick="add_star(<%= news.id %>)" id="add_star_<%= news.id %>"><i class="fa fa-heart-o"></i><span id="span"><%= news.star || 0 %></span></a>
-            <a href="javascript:void(0);"><i class="fa fa-share-alt"></i>分享</a>
           </p>
         </div>
         <div class="news-right">

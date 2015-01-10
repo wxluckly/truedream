@@ -169,6 +169,8 @@
 	.news-main p{margin-bottom: 0.5em;}
 	.news-main img{margin: 1em auto; max-width: 100%;}
 	.bshare-custom{ display: inline-block;}
+	.news-info .bshare-custom a,
+	.news-info .bshare-custom span { padding: 0 0 0 19px;}
 	/* pagination
 	-------------------------------------------------------------------------------- */
 	.pagination{ clear: both; font-size: 0;font-size: 12px;font-family: 'Microsoft YaHei'; margin: 3em auto; text-align: right;}

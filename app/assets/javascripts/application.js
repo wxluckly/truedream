@@ -15,3 +15,5 @@
 //= require sliderjs/jquery-finger-v0.1.0.min.js
 //= require sliderjs/flickerplate.min.js
 //= require navmouse.js
+//= require buttonLite.js
+//= require bshareC0.js

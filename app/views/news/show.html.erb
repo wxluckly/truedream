@@ -9,7 +9,7 @@
         <span>发布日期：<%= @news.published_at.strftime('%Y.%m.%d') rescue nil %></span>
         <% if @news.source.present? %><span>来源：<%= @news.source %></span><% end %>
         <a href="javascript:void(0);" onclick="add_star(<%= @news.id %>)" id="add_star_<%= @news.id %>"><i class="fa fa-heart-o"></i><span id="span"><%= @news.star || 0 %></span></a>
-        <div><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div>
+        <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div>
       </p>
       <div class="news-main">
         <%= raw @news.content %>
@@ -30,5 +30,3 @@
     });
   }
 </script>
-<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
-<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>

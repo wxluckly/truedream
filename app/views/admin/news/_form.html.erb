@@ -7,7 +7,7 @@
 <%= f.input :content, as: :kindeditor, label: '内容', input_html: {window_onload: true, filterMode: false} %>
 <%= f.input :published_at, label: '发布时间', include_seconds: true %>
 <%= f.input :source, label: '来源' %>
-<%= f.input :cover, label: '封面图(可选)' %>
+<%= f.input :cover, label: '封面图(可选)(310x160)' %>
 <div class="control-group">
   <div class="controls">
     <%= f.button :submit, "保存" %>

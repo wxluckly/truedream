@@ -76,6 +76,9 @@
 
 	/* contact-content
 	-------------------------------------------------------------------------------- */
+	.contact-col .left-column,
+	.contact-col .center-column{width: 480px;}
+	.dress-txt em{ font-style: normal;display: block; padding-left: 5.5em;}
 	.contact-content{ padding-top: 2.625em;}
 	.contact-content h2,
 	.contact-content p{ font-size: 0.8125em; font-family: Arial; line-height: 1.875em; margin: 0;}
@@ -96,7 +99,7 @@
 	.info-right-bar{ width: 63.4%; float: right;font-size: 0.8125em; font-family: 'Microsoft YaHei',Arial; color: #999999; padding-top: 1.846em; }
 	.info-right-bar h2{font-family: 'Microsoft YaHei'; margin-bottom: 1.538em;}
 	.info-right-bar h2 em{ color: #cfe7f2; font-style: normal; font-family: Arial; padding-left:0.384em; }
-	.info-right-bar p{ margin-bottom: 0;line-height: 1.846em;}
+	.info-right-bar p{ margin-bottom: 0;line-height: 1.846em; margin-bottom: 0.8rem;}
 	.info-right-bar .right-bar-txt{ color: #666666;margin-top: -1.846em;}
 	.info-right-bar .right-bar-txt p{margin-bottom: 0; line-height: 2.6em;}
 	.info-right-bar .wisdom{ font-size: 1.076em; margin: 1em 0; font-family: SimHei;}

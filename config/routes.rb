@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   resources :videos
   resources :news
 
+  namespace :ajax do
+    get 'add_star'
+  end
+
   namespace :admin do 
     root 'welcome#index'
     resource :biography

@@ -14,8 +14,8 @@
           <p class="news-info">
             <span>发布日期：<%= news.published_at.strftime('%Y.%m.%d') rescue nil %></span>
             <% if news.source.present? %><span>来源：<%= news.source %></span><% end %>
-            <a href="#"><i class="fa fa-heart"></i><%= news.star || 0 %></a>
-            <a href="#"><i class="fa fa-share-alt"></i>分享</a>
+            <a href="javascript:void(0);" onclick="add_star(<%= news.id %>)" id="add_star_<%= news.id %>"><i class="fa fa-heart-o"></i><span id="span"><%= news.star || 0 %></span></a>
+            <a href="javascript:void(0);"><i class="fa fa-share-alt"></i>分享</a>
           </p>
         </div>
         <div class="news-right">
@@ -39,3 +39,16 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  function add_star(article_id){
+    var score = $("#add_star_" + article_id + " #span").text();
+    $.ajax({
+      type: 'get',
+      url: '/ajax/add_star',
+      data: { article_id: article_id },
+      success: function(){
+        $("#add_star_" + article_id).html('<i class="fa fa-heart"></i><span>' + (parseInt(score) + 1) + '</span>')
+      }
+    });
+  }
+</script>

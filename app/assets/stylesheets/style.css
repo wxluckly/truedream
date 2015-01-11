@@ -20,10 +20,13 @@
 /* main-content
 -------------------------------------------------------------------------------- */
 
-.banner{position: relative; margin-bottom: 6%; font-size: 16px; min-height: 120px;}
+.banner .flickerplate ul.flicks li{ background-size: auto 100%; height: 488px;}
+.banner{position: relative; margin-bottom: 6%; font-size: 16px; min-height: 140px;}
 .banner img{ width: 100%;}
 .banner .qr-code img{ max-width: 99px;_width: 99px;}
-.banner .qr-code{ position: absolute; bottom: 20px; right: 30px;}
+.banner .qr-code{ position: absolute; bottom: 20px; left: 50%; margin-left:376px;}
+
+
 
 .left-column,
 .center-column,
@@ -205,11 +208,14 @@
 
 
 
-@media screen and (max-width : 990px) {
+@media screen and (max-width : 989px) {
 	.header,
 	.main-content,
 	.footer{width: 98%;}
 	
+	.flickerplate{ min-height: 140px;}
+	.banner .flickerplate ul.flicks li{ background-size: auto 100%; height: 100%;}
+	.banner .qr-code{ bottom: 10px; right: 10px; left: auto; margin-left: 0;}
 	/* main-content
 	-------------------------------------------------------------------------------- */
 	.left-column,
@@ -243,7 +249,6 @@
 
 
 
-
 @media screen and (max-width : 480px) {
 	body,
 	.nav-ul li{font-size: 8px;}
@@ -256,7 +261,9 @@
 	.map-model{ height:280px;}
 	.banner{font-size: 8px;}
 	.banner .qr-code img{ width: 70px;}
-	.banner .qr-code{ bottom: 10px; right: 10px;}
+	.banner .qr-code{ bottom: 5px; right: 5px;}
+	
+	
 	.news-content {font-family: 'Microsoft YaHei';font-size: 8px;}
 	.news-content .news-list .news-info span,
 	.news-content .news-list-img .news-info span,

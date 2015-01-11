@@ -9,6 +9,10 @@ $(function(){
 		$(".nav-ul li a").mouseout(function(){
 			$(this).find('span').show().next('em').hide();
 		});
+		if (screen.width < 768) {
+			$(".nav-ul li a").unbind("mouseover");
+			$(".nav-ul li a").unbind("mouseout");
+		};
 	};
 	navMouse();
 })

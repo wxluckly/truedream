@@ -21,7 +21,7 @@
 -------------------------------------------------------------------------------- */
 
 .banner .flickerplate ul.flicks li{ background-size: auto 100%; /*height: 488px;*/ height: 339px;}
-.banner{position: relative; margin-bottom: 6%; font-size: 16px; min-height: 140px;}
+.banner{position: relative; margin-bottom: 48px; font-size: 16px; min-height: 140px;}
 .banner img{ width: 100%;}
 .banner .qr-code img{ max-width: 99px;_width: 99px;}
 .banner .qr-code{ position: absolute; bottom: 20px; left: 50%; margin-left:376px;}
@@ -214,6 +214,7 @@
 	.footer{width: 98%;}
 	
 	.flickerplate{ min-height: 140px;}
+	.banner{ margin-bottom: 24px; }
 	.banner .flickerplate ul.flicks li{ background-size: auto 100%; height: 100%;}
 	.banner .qr-code{ bottom: 10px; right: 10px; left: auto; margin-left: 0;}
 	/* main-content
@@ -258,7 +259,9 @@
 	.pagination em,
 	.pagination a{font-size: 8px;}
 	.map-model{ height:280px;}
-	.banner{font-size: 8px;}
+	.banner{font-size: 8px; min-height: 100px;}
+	.flickerplate{ min-height: 100px;}
+	.banner{ margin-bottom: 14px; }
 	.banner .qr-code img{ width: 70px;}
 	.banner .qr-code{ bottom: 5px; right: 5px;}
 	

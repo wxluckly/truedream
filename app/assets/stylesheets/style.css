@@ -89,10 +89,11 @@
 	.contact-content .line{ width: 1.875em; height: 1px; line-height: 0; margin-bottom: 0.625em; _font-size: 1px; _width: 30em; _margin-bottom: 10em; background: #999999;}
 	.contact-content p{ color: #999999;word-wrap: break-word; overflow: visible; text-align: left; background: transparent;}
 	.contact-content-fa p{ position: relative; margin-left: 1.8em;}
+	.contact-content-fa span{ position: absolute;right: 20px;}
 	.contact-content-fa p .fa{ font-size: 1.384em; line-height: 1.384em; vertical-align: middle; text-indent: 0; position: absolute; left:-1.277em; top: 0;}
 	.contact-content-fa p a{ color: #999999;}
 	.contact-content-fa p a:hover{ color: #0088cc;}
-	.new-dream-weixin{cursor: pointer;}
+	.new-dream-weixin .fa-weixin{cursor: pointer;}
 	.new-dream-weixin img{ position: absolute; left: -4px; bottom: 1.5em; z-index: 2; display: none;}
 
 	/* info
@@ -265,6 +266,7 @@
 	.banner .qr-code img{ width: 70px;}
 	.banner .qr-code{ bottom: 5px; right: 5px;}
 	
+	.contact-content-fa span{ position: absolute;right: 0;}
 	
 	.news-content {font-family: 'Microsoft YaHei';font-size: 8px;}
 	.news-content .news-list .news-info span,

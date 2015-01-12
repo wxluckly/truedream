@@ -49,7 +49,7 @@ class Admin::NewsController < Admin::BaseController
 
   private
   def news_params
-    params.require(:news).permit(:title, :content, :cover, :published_at, :source)
+    params.require(:news).permit(:title, :content, :cover, :published_at, :source, :video, :summary)
   end
 
 end

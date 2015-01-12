@@ -15,6 +15,14 @@
         <%= raw @news.content %>
       </div>
     </div>
+    <% if @news.video %>
+    <div class="film">
+      <video id="my_video_1" class="" preload="auto" width="720" height="420" controls autobuffer>  
+        <source src="<%= @news.video %>" type='video/mp4'/>  
+        <embed src="<%= @news.video %>" autostart="true" loop="true" width="720" height="420"></embed>
+      </video>
+    </div>
+    <% end %>
   </div>
 </div>
 <script type="text/javascript">

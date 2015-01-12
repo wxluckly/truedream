@@ -122,9 +122,9 @@
 	/*.image-set a span{ position: absolute;z-index: 10; bottom: 0; left: 0; display: inline-block; background: rgba(0, 0, 0, 0.4); width: 100%; height: 2.4em; line-height: 2.4em; overflow: hidden; color: white; font-size: 0.875em;}*/
 	.image-set0 a{ overflow: hidden; display: block; float: left; width: 270px;margin-right: 90px; margin-bottom: 3em; background: #f2f2f2; text-align: center;}
 	.image-set0 a img{ max-width: 100%; _width: 100%;}
-	.lb-caption em{ display: block; font-weight: normal;}
+	.lb-caption em{ display: block; font-weight: normal; font-style: normal;}
 	.lb-data .lb-caption{ line-height: 1.4em; margin-top: 10px;}
-
+	.lb-data .lb-number{ display: none;}
 
 
 	/* news

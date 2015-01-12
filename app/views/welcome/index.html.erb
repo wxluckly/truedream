@@ -58,6 +58,7 @@
 <% content_for :js do %>
 <script type="text/javascript">
   $(function(){
+    $('.flicker-example').flicker();
     if (screen.width <= 989) {
       var flW = $(".flickerplate").width();
       var flWF = Math.floor(flW*0.2435);

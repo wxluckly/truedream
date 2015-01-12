@@ -124,7 +124,7 @@
 	.image-set0 a img{ max-width: 100%; _width: 100%;}
 	.lb-caption em{ display: block; font-weight: normal; font-style: normal;}
 	.lb-data .lb-caption{ line-height: 1.4em; margin-top: 10px;}
-	.lb-data .lb-number{ display: none;}
+	.lb-dataContainer .lb-data .lb-number{ display: none;}
 
 
 	/* news

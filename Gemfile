@@ -2,7 +2,7 @@ source 'http://ruby.taobao.org'
 
 # ruby '2.1'
 
-gem 'rails', '4.1.6'
+gem 'rails', '4.2.0'
 
 # 数据库
 gem 'mysql2', '0.3.16'
@@ -10,8 +10,8 @@ gem 'mysql2', '0.3.16'
 # 资源
 gem 'sass-rails', '4.0.3'
 gem 'uglifier', '1.3.0'
-gem 'coffee-rails', '4.0.0'
-gem 'jquery-rails', '2.2.1'
+gem 'coffee-rails', '4.1.0'
+gem 'jquery-rails', '4.0.3'
 gem 'jquery-ui-rails', '5.0.0'
 gem 'turbolinks', '2.3.0'
 gem 'font-awesome-sass', '4.2.0'
@@ -22,12 +22,12 @@ gem 'therubyracer', '0.12.1'
 # 辅助工具
 gem 'quiet_assets', '1.0.3'  # 禁用assets log
 gem 'will_paginate', '3.0.7'
-gem 'simple_form', '3.0.2'
+gem 'simple_form', '3.1.0'
 gem 'ancestry', '2.1.0'
 gem 'mini_exiftool', '2.5.0'
 
 # 权限验证
-gem 'devise', '3.2.4'
+gem 'devise', '3.4.1'
 
 # 文件和图片处理
 gem 'mini_magick', '3.7.0'

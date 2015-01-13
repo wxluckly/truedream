@@ -60,7 +60,7 @@
 .right-column h3 a,
 .left-column h4 a,
 .center-column h4 a,
-.right-column h4 a{ font-size: 0.8125em; color: #999999;line-height: 0.8125em;*line-height: 1.2em;}
+.right-column h4 a{ font-size: 0.8125em; font-weight: normal; color: #999999;line-height: 0.8125em;*line-height: 1.2em;}
 
 .left-column h3 a:hover,
 .center-column h3 a:hover,

@@ -1,7 +1,7 @@
 class Admin::NewsController < Admin::BaseController
 
   def index
-    @news = News.paginate(page: params[:page])
+    @news = News.sort_order.paginate(page: params[:page])
   end
 
   def new

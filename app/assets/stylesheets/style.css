@@ -103,6 +103,7 @@
 	.info-right-bar h2{font-family: 'Microsoft YaHei'; margin-bottom: 1.538em;}
 	.info-right-bar h2 em{ color: #cfe7f2; font-style: normal; font-family: Arial; padding-left:0.384em; }
 	.info-right-bar p{ margin-bottom: 0;line-height: 1.846em; margin-bottom: 0.8rem;text-indent: 1.624em;}
+	.right-bar-txt-home p{ text-indent:0;}
 	.info-right-bar .right-bar-txt{ color: #666666;margin-top: -1.846em;}
 	.info-right-bar .right-bar-txt p{margin-bottom: 0; line-height: 2.6em;}
 	.info-right-bar .wisdom{ font-size: 1.076em; margin: 1em 0; font-family: SimHei;}

@@ -15,7 +15,7 @@
         <%= raw @news.content %>
       </div>
     </div>
-    <% if @news.video %>
+    <% if @news.video.present? %>
     <div class="film">
       <video id="my_video_1" class="" preload="auto" width="720" height="420" controls autobuffer>  
         <source src="<%= @news.video %>" type='video/mp4'/>  

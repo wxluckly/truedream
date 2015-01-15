@@ -179,7 +179,7 @@
 
 	.pagination span,
 	.pagination em,
-	.pagination a{ text-align: center; font-size: 12px; line-height: 2em; color: #999999; margin-right: 4px; display:inline-block;*display:inline; *zoom:1; border:1px solid #e2e2e2; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px;}
+	.pagination a{ text-align: center; font-style: normal; font-size: 12px; line-height: 2em; color: #999999; margin-right: 4px; display:inline-block;*display:inline; *zoom:1; border:1px solid #e2e2e2; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px;}
 
 	.pagination em,
 	.pagination a{ width: 2em; height: 2em; }

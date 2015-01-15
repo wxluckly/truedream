@@ -55,7 +55,7 @@ Rails.application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   config.action_controller.asset_host = Proc.new do |source|
-    "http://#{source =~ /(eot|otf|ttf|woff)$/ ? 'www' : 'cdn'}.truedream.com.cn"
+    "http://#{source =~ /(eot|otf|ttf|woff)$/ ? '' : 'cdn.'}truedream.com.cn"
   end.tap {|p| def p.to_s; end}
 
   # Ignore bad email addresses and do not raise email delivery errors.

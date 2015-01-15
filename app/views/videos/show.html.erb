@@ -6,8 +6,8 @@
   <div class="main-content clearfix">
     <div class="film">
       <video id="my_video_1" class="" preload="auto" width="720" height="420" controls autobuffer>  
-        <source src="<%= @video.video %>" type='video/mp4'/>  
-        <embed src="<%= @video.video %>" autostart="true" loop="true" width="720" height="420"></embed>
+        <source src="<%= "#{'http://cdn.truedream.com.cn' if ENV['RAILS_ENV'] == 'production'}#{@video.video}" %>" type='video/mp4'/>  
+        <embed src="<%= "#{'http://cdn.truedream.com.cn' if ENV['RAILS_ENV'] == 'production'}#{@video.video}" %>" autostart="true" loop="true" width="720" height="420"></embed>
       </video>
       <h3><%= @video.title %></h3> 
     </div>

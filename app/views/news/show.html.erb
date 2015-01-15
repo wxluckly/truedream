@@ -18,8 +18,8 @@
     <% if @news.video.present? %>
     <div class="film">
       <video id="my_video_1" class="" preload="auto" width="720" height="420" controls autobuffer>  
-        <source src="<%= @news.video %>" type='video/mp4'/>  
-        <embed src="<%= @news.video %>" autostart="true" loop="true" width="720" height="420"></embed>
+        <source src="<%= "#{'http://cdn.truedream.com.cn' if ENV['RAILS_ENV'] == 'production'}#{@news.video}" %>" type='video/mp4'/>  
+        <embed src="<%= "#{'http://cdn.truedream.com.cn' if ENV['RAILS_ENV'] == 'production'}#{@news.video}" %>" autostart="true" loop="true" width="720" height="420"></embed>
       </video>
     </div>
     <% end %>

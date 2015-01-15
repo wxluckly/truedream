@@ -99,7 +99,7 @@
 	-------------------------------------------------------------------------------- */
 	.info-left-bar{ width: 34.3%; float: left;}
 	.info-left-bar img{width: 100%;}
-	.info-right-bar{ width: 63.4%; float: right;font-size: 0.8125em; font-family: 'Microsoft YaHei',Arial; color: #999999; padding-top: 1.846em; }
+	.info-right-bar{ width: 63.4%; float: right;font-size: 0.8125em; font-family: 'Microsoft YaHei',Arial; color: #666666; padding-top: 1.846em; }
 	.info-right-bar h2{font-family: 'Microsoft YaHei'; margin-bottom: 1.538em;}
 	.info-right-bar h2 em{ color: #cfe7f2; font-style: normal; font-family: Arial; padding-left:0.384em; }
 	.info-right-bar p{ margin-bottom: 0;line-height: 1.846em; margin-bottom: 0.8rem;text-indent: 1.624em;}

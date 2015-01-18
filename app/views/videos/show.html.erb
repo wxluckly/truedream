@@ -10,6 +10,7 @@
         <embed src="<%= "#{'http://cdn.truedream.com.cn' if ENV['RAILS_ENV'] == 'production'}#{@video.video}" %>" autostart="true" loop="true"></embed>
       </video>
       <h3><%= @video.title %></h3> 
+      <h3><%= @video.etitle %></h3> 
     </div>
   </div>
 </div>

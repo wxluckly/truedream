@@ -72,10 +72,10 @@
 .film,
 .film video,
 .film embed{ width: 720px;margin: 0 auto;}
-.film embed,
-.film video{ background: #e2e2e2;}
-.film{ margin-bottom:1.25em;}
-.film h3{ font-size: 0.8125em; color: #999999;line-height:1.625em;}
+/*.film embed,
+.film video{ background: #e2e2e2;}*/
+.film{ margin-bottom:1.25em; text-align: center;}
+.film h3{ font-size: 0.8125em; color: #999999;line-height:1.625em; text-align: left;}
 
 	/* contact-content
 	-------------------------------------------------------------------------------- */

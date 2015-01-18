@@ -2,20 +2,20 @@
   <!-- header -->
   <%= render "header" %>
 
-  <!-- banner -->
-  <div class="banner clearfix">
-    <div class="flicker-example" data-block-text="false">
-      <ul>
-        <li data-background="<%= image_url 'home_top.jpg' %>"></li>
-      </ul>
-    </div>
-    <div class="qr-code">
-      <%= image_tag 'qr.png' %>
-    </div>
-  </div>
 
   <!-- main-content -->
   <div class="main-content clearfix">
+    <!-- banner -->
+    <div class="banner clearfix">
+      <div class="flicker-example" data-block-text="false">
+        <ul>
+          <li data-background="<%= image_url 'home_top.jpg' %>"></li>
+        </ul>
+      </div>
+      <div class="qr-code">
+        <%= image_tag 'qr.png' %>
+      </div>
+    </div>
     <div class="info-left-bar">
       <%= image_tag 'home.jpg' %>
     </div>
@@ -59,11 +59,9 @@
 <script type="text/javascript">
   $(function(){
     $('.flicker-example').flicker();
-    if (screen.width <= 989) {
-      var flW = $(".flickerplate").width();
-      var flWF = Math.floor(flW*0.1718);
-      $(".flickerplate").css({"height":flWF+"px"});
-    };
+    var flW = $(".flickerplate").width();
+    var flWF = Math.floor(flW*0.4818);
+    $(".flickerplate").css({"height":flWF+"px"});
   })
 </script>
 <% end %>

@@ -86,7 +86,7 @@
 	.contact-content h2,
 	.contact-content p{ font-size: 0.8125em; font-family: Arial; line-height: 1.875em; margin: 0;}
 	.contact-content h2{ border-bottom: 1px solid #999999;}
-	.contact-content .line{ width: 1.875em; height: 1px; line-height: 0; margin-bottom: 0.625em; _font-size: 1px; _width: 30em; _margin-bottom: 10em; background: #999999;}
+	.contact-content .line{ width: 1.875em; height: 1px; line-height: 0; margin-bottom: 0.625em; _font-size: 1px; _width: 30em; _margin-bottom: 10em; background: white;}
 	.contact-content p{ color: #999999;word-wrap: break-word; overflow: visible; text-align: left; background: transparent;}
 	.contact-content-fa p{ position: relative; margin-left: 1.8em;}
 	.contact-content-fa p .fa{ font-size: 1.384em; line-height: 1.384em; vertical-align: middle; text-indent: 0; position: absolute; left:-1.277em; top: 0;}
